@@ -1,10 +1,10 @@
 require 'formula'
 
 class Nite < Formula
-  homepage 'https://onedrive.live.com/redir?resid=33B0FE678911B037%21573'
-  url 'https://onedrive.live.com/redir?resid=33B0FE678911B037%21573'
+  homepage 'file:///Users/ryosuzuki/Downloads/NITE.tar.bz2'
+  url 'file:///Users/ryosuzuki/Downloads/NITE.tar.bz2'
   version '1.5.2.21'
-  sha1 '9dad7d093e02cf2edc50ac5e61f224eb07ba7c7e'
+  sha1 'aaaef336817505d73dec733782e9ee236454652e'
 
   depends_on 'openni' => (build.universal?) ? ['universal'] : []
 
@@ -15,8 +15,8 @@ class Nite < Formula
 
     cxxstdlib_check :skip
 
-    system 'tar zxvf NITE-Bin-MacOSX-v1.5.2.21.tar.bz2'
-    cd 'NITE-Bin-Dev-MacOSX-v1.5.2.21'
+ 
+    cd 'nite-1.5.2.21'
 
     ohai 'Installing...'
 
